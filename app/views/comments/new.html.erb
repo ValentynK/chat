@@ -1,0 +1,11 @@
+<% if current_user %>
+  <h1>Join the discussion</h1>
+  <div class="bradius shadow" id="comments">
+  <%= render 'form' %>
+      <ul class="media-list">
+      <%= render @comments %>
+      </ul>
+  </div>
+<% else %>
+  <%= render 'welcome' %>
+<% end %>

@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <div class="comments-content">
+    <li>
+      <h4><%= mail_to comment.user.email %> says
+      <small>[at <%= comment.created_at.strftime('%-d %B %Y, %H:%M:%S') %>]</small></h4>
+      <p class="comment-body"><%= comment.body %></p>
+    </li>
+  </div>
+</div>
